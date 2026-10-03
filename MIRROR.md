@@ -35,7 +35,7 @@ Never copy Cursor's files onto `main` directly. That erases the edits.
 
    ```bash
    cp agents/comment-sicko.md skills/no-comments/references/comment-sicko.md
-   git diff upstream@{1} upstream -- skills | grep -nE '\.cursor/|agent-transcripts|cursor-team-kit|create-skill|Task'
+   git diff upstream@{1} upstream -- skills agents docs | grep -nE '^\+.*(\.cursor/|pstack-models|agent-transcripts|cursor-team-kit|create-skill|AskQuestion|generalPurpose|environment: "cloud"|cloud_base_branch|mcps/|/loop|\bTask\b|Cursor)'
    ```
 
    Rewrite any new hits the same way as the existing edits. The Harness section in `skills/poteto-mode/SKILL.md` lists the mappings.

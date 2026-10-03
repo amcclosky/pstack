@@ -21,7 +21,7 @@ The CLI shows every skill in a list you can search. Select the skills you want, 
 
 These skills don't call other pstack skills, so each one works alone:
 
-`unslop`, `bro`, `how`, `tdd`, `typescript-best-practices`, `arena`, `swarm`, `interrogate`, `reflect`, `show-me-your-work`, `automate-me`, `correct`
+`unslop`, `bro`, `how`, `tdd`, `typescript-best-practices`, `arena`, `swarm`, `interrogate`, `reflect`, `show-me-your-work`, `correct`
 
 Some skills call other skills. Install these together:
 
@@ -30,11 +30,12 @@ Some skills call other skills. Install these together:
 | `teach` | `how`, `why` |
 | `why` | `how` |
 | `technical-writing` | `unslop` |
+| `automate-me` | `unslop` |
 | `architect` | `arena`, `how` |
 | `blast-radius` | `arena`, `how`, `why`, `unslop` |
 | `create-verification-skill` | `maintain-verification-skill` |
 | `benchmark-checklist` | `principle-explain-the-number` |
-| `figure-it-out` | `show-me-your-work` |
+| `figure-it-out` | `show-me-your-work`, `architect`, `arena`, `how`, `poteto-mode` |
 | `poteto-mode` | all `principle-*` skills and most of the other skills |
 
 ## What this mirror changes
